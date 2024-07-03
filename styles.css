@@ -1,0 +1,103 @@
+/* styles.css */
+@font-face {
+    font-family: "Playwrite US Trad";
+    src: url('path/to/playwrite-us-trad.woff2') format('woff2'),
+         url('path/to/playwrite-us-trad.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    margin: 0;
+    font-family: 'Playwrite US Trad', cursive;
+    color: #61dafb;
+}
+
+.container {
+    border: 2px solid #61dafb;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.city {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.clock, .calendar, .weather {
+    font-family: 'Playwrite US Trad', cursive;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    margin: 10px 0;
+}
+
+.clock {
+    font-size: 5em;
+    letter-spacing: 0.05em;
+}
+
+.calendar {
+    font-size: 2em;
+}
+
+.weather {
+    font-size: 1.5em;
+}
+
+.task-manager {
+    margin-top: 20px;
+}
+
+#task-input {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #61dafb;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#add-task-button {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #61dafb;
+    border-radius: 5px;
+    background-color: #61dafb;
+    color: #282c34;
+    cursor: pointer;
+}
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+}
+
+#task-list li {
+    background-color: #61dafb;
+    color: #282c34;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-task-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
